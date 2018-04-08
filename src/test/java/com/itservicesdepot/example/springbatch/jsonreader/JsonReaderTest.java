@@ -35,7 +35,6 @@ public class JsonReaderTest {
 
 		JobExecution jobExecution = jobLauncher.run(this.exampleJsonReaderJob,
 				new JobParametersBuilder()
-						.addString("file", "C:\\work\\spring-batch\\file\\soccers.json")
 						.addDate("now", new Date()).toJobParameters());
 
 		stopWatch.stop();

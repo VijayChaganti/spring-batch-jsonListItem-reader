@@ -24,7 +24,7 @@
 	<bean id="taskExecutor" class="org.springframework.core.task.SimpleAsyncTaskExecutor" />
 	
 	<bean id="exampleJsonReader" class="com.itservicesdepot.example.springbatch.jsonreader.reader.JsonFileListItemReader" scope="step">
-		<property name="resource" value="file:#{jobParameters['file']}" />
+		<property name="resource" value="classpath:soccers.json" />
 		<property name="classToBound" value="com.itservicesdepot.example.springbatch.jsonreader.model.SoccerJsonEntry" />
 	</bean>
 	
