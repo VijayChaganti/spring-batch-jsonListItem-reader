@@ -7,6 +7,7 @@ This is to demo how to use Spring-Batch with
 In this example, we will parse a JSON file as a List of Objects and give it to Processor and Writer
 
 # This is an input Json File
+```
 [
 	{
 		"name": "zidane",
@@ -57,8 +58,9 @@ In this example, we will parse a JSON file as a List of Objects and give it to P
 		"nation": "spain"
 	}
 ]
-
+```
 # This is the output at console (commit-interval is 5)
+```
 2018-04-08 11:55:50,609 INFO (com.itservicesdepot.example.springbatch.jsonreader.ExampleProcessor;13) Processing 'Number SoccerJsonEntry [name=zidane, nation=france]'
 2018-04-08 11:55:50,609 INFO (com.itservicesdepot.example.springbatch.jsonreader.ExampleProcessor;13) Processing 'Number SoccerJsonEntry [name=ronaldo, nation=brazil]'
 2018-04-08 11:55:50,610 INFO (com.itservicesdepot.example.springbatch.jsonreader.ExampleProcessor;13) Processing 'Number SoccerJsonEntry [name=marcelo, nation=brazil]'
@@ -83,3 +85,4 @@ In this example, we will parse a JSON file as a List of Objects and give it to P
 2018-04-08 11:55:50,618 INFO (com.itservicesdepot.example.springbatch.jsonreader.ExampleProcessor;13) Processing 'Number SoccerJsonEntry [name=xavi, nation=spain]'
 2018-04-08 11:55:50,619 INFO (com.itservicesdepot.example.springbatch.jsonreader.ExampleWriter;16) Writing SoccerJsonEntry [name=kaka, nation=brazil]
 2018-04-08 11:55:50,619 INFO (com.itservicesdepot.example.springbatch.jsonreader.ExampleWriter;16) Writing SoccerJsonEntry [name=xavi, nation=spain]
+```
